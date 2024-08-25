@@ -17,3 +17,13 @@ export const getProductById = async id => {
     console.log(error);
   }
 };
+export const createNewProduct = async newProduct => {
+  try {
+    const response = await apiInstance.post(`/products/add`, newProduct);
+    return response;
+
+  } catch (error) {
+
+  }
+
+}
